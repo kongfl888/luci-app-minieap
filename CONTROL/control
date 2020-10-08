@@ -1,0 +1,8 @@
+Package: luci-app-minieap
+Version: 1.0-1k
+Depends: luci
+Architecture: all
+Maintainer: kongfl888<kongfl888@outlook.com>
+Section: luci
+Description: minieap 802.1X Client for LuCI
+Source: package/luci-app-minieap

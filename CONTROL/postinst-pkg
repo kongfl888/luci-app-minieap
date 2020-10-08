@@ -1,0 +1,8 @@
+#!/bin/sh
+	chmod +x /usr/sbin/minieap-conver >/dev/null 2>&1
+	chmod +x /usr/sbin/minieap-ping >/dev/null 2>&1
+	chmod +x /etc/init.d/minieap >/dev/null 2>&1
+	rm -rf /tmp/luci-modulecache/* >/dev/null 2>&1
+	rm -rf /tmp/luci-indexcache* >/dev/null 2>&1
+
+exit 0

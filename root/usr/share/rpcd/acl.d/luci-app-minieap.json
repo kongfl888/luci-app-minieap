@@ -1,0 +1,22 @@
+{
+	"luci-app-minieap": {
+		"description": "Grant UCI access for luci-app-minieap",
+		"read": {
+			"file": {
+				"/etc/init.d/minieap": [ "exec" ],
+				"/usr/sbin/minieap-conver": [ "exec" ],
+				"/usr/sbin/minieap-ping": [ "exec" ],
+				"/var/log/minieap.log": [ "read" ],
+				"/etc/minieap.conf.d/minieap.conf.utf8": [ "read" ]
+			},
+			"uci": [ "minieap" ]
+		},
+		"write": {
+			"file": {
+				"/var/log/minieap.log": [ "write" ],
+				"/etc/minieap.conf.d/minieap.conf.utf8": [ "write" ]
+			},
+			"uci": [ "minieap" ]
+		}
+	}
+}
